@@ -1,9 +1,9 @@
 {
   "contractName": "TodoList",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/nkhal/source/repos/eth-todo/contracts/TodoList.sol\":\"TodoList\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/nkhal/source/repos/eth-todo/contracts/TodoList.sol\":{\"keccak256\":\"0x0f8ca9191e57f95c502fb0ec3fca2469667bb4db578d3c34ba384d73986ebd1d\",\"urls\":[\"bzz-raw://cf73b487764c4bb61f077ee37225a42c2e8a0312a8874cde9f60d46e5f4a014a\",\"dweb:/ipfs/QmNnTNSpaQZok2w8E2mVNGoPG3Wo2XKLZG8thg4WGsSp7r\"]}},\"version\":1}",
-  "bytecode": "0x608060405260008055348015601357600080fd5b50603e8060216000396000f3fe6080604052600080fdfea265627a7a72315820b8cac0cfc00c63f52796ae77e27e825e505a4e0bf23bc0bcc8dd1bbaccecb43b64736f6c63430005100032",
-  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820b8cac0cfc00c63f52796ae77e27e825e505a4e0bf23bc0bcc8dd1bbaccecb43b64736f6c63430005100032",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/nkhal/source/repos/eth-todo/contracts/TodoList.sol\":\"TodoList\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/nkhal/source/repos/eth-todo/contracts/TodoList.sol\":{\"keccak256\":\"0x0f8ca9191e57f95c502fb0ec3fca2469667bb4db578d3c34ba384d73986ebd1d\",\"urls\":[\"bzz-raw://cf73b487764c4bb61f077ee37225a42c2e8a0312a8874cde9f60d46e5f4a014a\",\"dweb:/ipfs/QmNnTNSpaQZok2w8E2mVNGoPG3Wo2XKLZG8thg4WGsSp7r\"]}},\"version\":1}",
+  "bytecode": "0x608060405260008055348015601357600080fd5b50603e8060216000396000f3fe6080604052600080fdfea265627a7a7231582054ed1647f32f8b098c68ae0a7b5447f82f682ab839964548b28f2376e88a04d864736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a7231582054ed1647f32f8b098c68ae0a7b5447f82f682ab839964548b28f2376e88a04d864736f6c63430005100032",
   "sourceMap": "27:45:1:-;;;67:1;50:18;;27:45;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:45:1;;;;;;;",
   "deployedSourceMap": "27:45:1:-;;;;;",
   "source": "pragma solidity ^0.5.0;\r\n\r\ncontract TodoList {\r\n  uint taskCount = 0;\r\n}\r\n",
@@ -180,9 +180,17 @@
     "name": "solc",
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xD60eCc9d33681DDC1B9147B188d56f0dAE2e9381",
+      "transactionHash": "0x05018ecc15aaab27bde0e102b2c144f2cb9e4e191685f646cbb8d58c48783c51"
+    }
+  },
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-04-20T23:13:45.248Z",
+  "updatedAt": "2020-04-20T23:47:35.649Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
