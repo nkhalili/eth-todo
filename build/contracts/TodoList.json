@@ -1,12 +1,28 @@
 {
   "contractName": "TodoList",
-  "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/nkhal/source/repos/eth-todo/contracts/TodoList.sol\":\"TodoList\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/nkhal/source/repos/eth-todo/contracts/TodoList.sol\":{\"keccak256\":\"0x0f8ca9191e57f95c502fb0ec3fca2469667bb4db578d3c34ba384d73986ebd1d\",\"urls\":[\"bzz-raw://cf73b487764c4bb61f077ee37225a42c2e8a0312a8874cde9f60d46e5f4a014a\",\"dweb:/ipfs/QmNnTNSpaQZok2w8E2mVNGoPG3Wo2XKLZG8thg4WGsSp7r\"]}},\"version\":1}",
-  "bytecode": "0x608060405260008055348015601357600080fd5b50603e8060216000396000f3fe6080604052600080fdfea265627a7a7231582054ed1647f32f8b098c68ae0a7b5447f82f682ab839964548b28f2376e88a04d864736f6c63430005100032",
-  "deployedBytecode": "0x6080604052600080fdfea265627a7a7231582054ed1647f32f8b098c68ae0a7b5447f82f682ab839964548b28f2376e88a04d864736f6c63430005100032",
-  "sourceMap": "27:45:1:-;;;67:1;50:18;;27:45;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:45:1;;;;;;;",
-  "deployedSourceMap": "27:45:1:-;;;;;",
-  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract TodoList {\r\n  uint taskCount = 0;\r\n}\r\n",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "taskCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"taskCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/nkhal/source/repos/eth-todo/contracts/TodoList.sol\":\"TodoList\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/nkhal/source/repos/eth-todo/contracts/TodoList.sol\":{\"keccak256\":\"0xf4c50ce4e203be05835c78a96756b08bec191c3f1e40dfb4b8f37818473ef351\",\"urls\":[\"bzz-raw://0602ab7263ec839ed0f27daf0b5210d116193e4e47c49fd7f6e5d875ca5bac78\",\"dweb:/ipfs/QmUrKBidkKAawpE2zN1o68LkTQ148gQmAFSoCAdSbpdHap\"]}},\"version\":1}",
+  "bytecode": "0x608060405260008055348015601357600080fd5b506080806100226000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063b6cb58a514602d575b600080fd5b60336045565b60408051918252519081900360200190f35b6000548156fea265627a7a723158201410df6a7e345a6cad2d9166ccc53c783a42358100f0c830d43bc41ddf56104264736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063b6cb58a514602d575b600080fd5b60336045565b60408051918252519081900360200190f35b6000548156fea265627a7a723158201410df6a7e345a6cad2d9166ccc53c783a42358100f0c830d43bc41ddf56104264736f6c63430005100032",
+  "sourceMap": "27:52:1:-;;;74:1;50:25;;27:52;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:52:1;;;;;;;",
+  "deployedSourceMap": "27:52:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:52:1;;;;;;;;;;;;;;;;;;;50:25;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract TodoList {\r\n  uint public taskCount = 0;\r\n}\r\n",
   "sourcePath": "C:\\Users\\nkhal\\source\\repos\\eth-todo\\contracts\\TodoList.sol",
   "ast": {
     "absolutePath": "/C/Users/nkhal/source/repos/eth-todo/contracts/TodoList.sol",
@@ -48,7 +64,7 @@
             "name": "taskCount",
             "nodeType": "VariableDeclaration",
             "scope": 42,
-            "src": "50:18:1",
+            "src": "50:25:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -75,7 +91,7 @@
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "67:1:1",
+              "src": "74:1:1",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
@@ -83,14 +99,14 @@
               },
               "value": "0"
             },
-            "visibility": "internal"
+            "visibility": "public"
           }
         ],
         "scope": 43,
-        "src": "27:45:1"
+        "src": "27:52:1"
       }
     ],
-    "src": "0:74:1"
+    "src": "0:81:1"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/nkhal/source/repos/eth-todo/contracts/TodoList.sol",
@@ -132,7 +148,7 @@
             "name": "taskCount",
             "nodeType": "VariableDeclaration",
             "scope": 42,
-            "src": "50:18:1",
+            "src": "50:25:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -159,7 +175,7 @@
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "67:1:1",
+              "src": "74:1:1",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
@@ -167,14 +183,14 @@
               },
               "value": "0"
             },
-            "visibility": "internal"
+            "visibility": "public"
           }
         ],
         "scope": 43,
-        "src": "27:45:1"
+        "src": "27:52:1"
       }
     ],
-    "src": "0:74:1"
+    "src": "0:81:1"
   },
   "compiler": {
     "name": "solc",
@@ -189,8 +205,7 @@
     }
   },
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-04-20T23:47:35.649Z",
-  "networkType": "ethereum",
+  "updatedAt": "2020-04-21T00:04:35.192Z",
   "devdoc": {
     "methods": {}
   },
